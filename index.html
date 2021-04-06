@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Kevin's Weather</title>
+</head>
+
+<body>
+  <div class='header'>
+    <h1>Weather Forcast</h1>
+  </div>
+
+  <form>
+    <label>Enter a U.S. city</label>
+    <input id="weatherInput" type="text"></input><br/>
+    <input id="weatherSubmit" type="submit" value="Submit"></input>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="script.js"></script>
+  </form>
+
+  <div class='apiReturnResults'>
+    <div id="weatherResults">
+    </div>
+    <br><br>
+    <div id="forecastResults">
+      <div class="container">
+        <h1 id="currentDayHeader"></h1>
+        <div id="currentDay">
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <h1 id="day1Header"></h1>
+        <div id="day1">
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <h1 id="day2Header"></h1>
+        <div id="day2">
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <h1 id="day3Header"></h1>
+        <div id="day3">
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <h1 id="day4Header"></h1>
+        <div id="day4">
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <h1 id="day5Header"></h1>
+        <div id="day5">
+        </div>
+      </div>
+  	</div>
+  </div>
+
+</body>
+</html>
